@@ -1,13 +1,14 @@
 {
   "name": "exp-cli",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo"
   },
   "dependencies": {
     "browser-sync": "^2.12.4",
+    "commander": "^2.9.0",
     "express": "^4.13.4",
     "express-http-proxy": "^0.6.0",
     "open": "0.0.5",

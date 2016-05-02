@@ -1,5 +1,3 @@
-
-
 The EXP CLI allows developers to run a local web application in an EXP player. This gives the application access to the Player App SDK.
 
 # Installation

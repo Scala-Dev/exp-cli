@@ -4,7 +4,7 @@ var commander = require('commander');
 var path = require('path');
 var devPlayer = require('../lib/dev-player');
 
-commander.version('0.0.3')
+commander.version('0.0.4')
 
 commander.command('play [path]')
   .description('launch a player app in your local browser on a player')

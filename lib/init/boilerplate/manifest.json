@@ -1,0 +1,45 @@
+{
+  "name": "my-new-app",
+  "icon": "image-area",
+  "background": "blue",
+  "configTypes": [
+    {
+      "name": "duration",
+      "type": "number",
+      "label": "Whhhat is your favorite number?",
+      "required": true,
+      "path": "favorites.number"
+    },
+    {
+      "name":"backgroundColor",
+      "type":"color",
+      "label":"Whhhat is your favorite color?",
+      "required":false,
+      "path":"favorites.color"
+    },
+    {
+      "name": "select",
+      "type": "select",
+      "label": "Whhhat Is the airspeed velocity of an unladen swallow?",
+      "required": true,
+      "path": "airspeedVelocity",
+      "options": [
+        {
+          "label": "African",
+          "value": "african"
+        },
+        {
+          "label": "European",
+          "value": "european"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "favorites": {
+      "number": 3.14,
+      "color": "rgba(1, 1, 1, 0)"
+    },
+    "airspeedVelocity": "african"
+  }
+}

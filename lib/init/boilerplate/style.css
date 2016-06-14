@@ -2,6 +2,7 @@
 /* Remember that EXP player has a black background! */
 
 body {
- font-family: sans-serif;
- background: white;
+ font-family: 'Roboto', sans-serif; 
+ color: #7E57C2; 
+ background-color: #FFF
 }

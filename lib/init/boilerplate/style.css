@@ -1,0 +1,14 @@
+/* Remember that EXP player has a black background! */
+
+body {
+ font-family: 'Roboto', sans-serif;
+ color: #7E57C2;
+ background-color: #FFF
+}
+
+.center-wrapper{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

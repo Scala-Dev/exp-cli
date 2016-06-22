@@ -13,18 +13,22 @@ npm install -g exp-cli
 Note: You may need to use `sudo` or be logged in as `root`.
 
 
-# Launch Your HTML5 Application 
+# Create the App
 
-Change your working directory to the directory containing `index.html` and run
+Create a directory where you want to create your application and run
+
+```bash
+exp init
+```
+
+This will generate an `index.html`, `style.css`, `main.js`, and `manifest.json`.
+
+# Launch the App
+
+From the directory where you created the app run
 
 ```bash
 exp play
-```
-
-You can also specify the path to `index.html`:
-
-```bash
-exp play ./my-app/
 ```
 
 This will launch an EXP player in a webrowser. The first time you run `exp play` you'll be presented with a pairing screen. Use the EXP user interface to pair the device to your browser.

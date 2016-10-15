@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-var commander = require('commander');
+var commander = require('commander-plus');
 var path = require('path');
 var devPlayer = require('../lib/dev-player');
 var init = require('../lib/init');
+var deploy = require('../lib/deploy');
 
 commander.version('0.0.5')
 
@@ -22,6 +23,10 @@ commander.command('play')
 commander.command('init')
   .description('create a player app in the current working directory')
   .action(init);
+
+commander.command('deploy')
+  .description('deploy a player app to your organization')
+  .action(deploy);
 
 commander.command('*', '',  { isDefault: true, noHelp: true })
   .action(function () {

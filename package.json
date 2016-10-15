@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "browser-sync": "^2.12.4",
-    "commander": "^2.9.0",
+    "colors": "^1.1.2",
+    "commander-plus": "0.0.6",
+    "exp-sdk": "^1.0.5",
     "express": "^4.13.4",
     "express-http-proxy": "^0.6.0",
     "open": "0.0.5",

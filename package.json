@@ -8,13 +8,13 @@
   },
   "dependencies": {
     "browser-sync": "^2.12.4",
-    "colors": "^1.1.2",
+    "colors": "1.1.2",
     "commander-plus": "0.0.6",
     "exp-sdk": "1.0.5",
     "express": "^4.13.4",
     "express-http-proxy": "^0.6.0",
     "open": "0.0.5",
-    "request": "^2.78.0",
+    "request": "2.78.0",
     "socket.io": "^1.4.5",
     "watch": "^0.17.1"
   },

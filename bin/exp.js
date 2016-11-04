@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var commander = require('commander-plus');
+var commander = require('commander');
 var path = require('path');
 var devPlayer = require('../lib/dev-player');
 var init = require('../lib/init');

@@ -66,7 +66,7 @@ exp deploy
 
 This will begin the process of uploading new or changed files and folders to an app in your content tree. The first time you run `exp deploy` you'll be required to log into an organization.  The authentication will be saved temporarily to make subsequent deploys faster.  If for any reason you need to remove the saved authentication you can use the `exp logout` command.
 
-During deployment you will be asked to enter the name or path to the app in your content tree.  Optionally, you can specify the app name or path to the `exp deploy` command, i.e. `exp deploy --app custom-weather-app`
+During deployment you will be asked to enter the relative (to root) or absolute path to the app in your content tree.  Optionally, you can specify the app path to the `exp deploy` command, i.e. `exp deploy --app custom-weather-app`
 
 If the app does not exist you will be asked to confirm that you want to create the app.  Enter `y` or `yes` to approve the upload.
 

@@ -2,9 +2,9 @@ The EXP CLI allows developers to run a local web application in an EXP player. T
 
 # Installation
 
-Install [NodeJS](https://nodejs.org/en/download/) on your operating system. For OSX users with homebrew you can use `brew install node`. 
+Install [NodeJS](https://nodejs.org/en/download/) on your operating system. For OSX users with homebrew you can use `brew install node`.
 
-Once Node is installed, install the `exp-cli` package globally using NPM. 
+Once Node is installed, install the `exp-cli` package globally using NPM.
 
 ```bash
 npm install -g exp-cli
@@ -54,6 +54,24 @@ These options will be accessible inside the application at `exp.app.config`.
 
 # Running Multiple Players
 
-You can run multiple players by specifying a port to the `exp play` command, i.e. `exp play -p 8899`. Each running player will need to be paired individually. 
+You can run multiple players by specifying a port to the `exp play` command, i.e. `exp play -p 8899`. Each running player will need to be paired individually.
+
+# Deploy the App
+
+From the directory where you created the app run
+
+```bash
+exp deploy
+```
+
+This will begin the process of uploading new or changed files and folders to an app in your content tree. The first time you run `exp deploy` you'll be required to log into an organization.  The authentication will be saved temporarily to make subsequent deploys faster.  If for any reason you need to remove the saved authentication you can use the `exp logout` command.
+
+During deployment you will be asked to enter the relative (to root) or absolute path to the app in your content tree.  Optionally, you can specify the app path to the `exp deploy` command, i.e. `exp deploy --app custom-weather-app`
+
+If the app does not exist you will be asked to confirm that you want to create the app.  Enter `y` or `yes` to approve the upload.
+
+
+
+
 
 

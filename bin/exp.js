@@ -4,6 +4,8 @@ var commander = require('commander');
 var path = require('path');
 var devPlayer = require('../lib/dev-player');
 var init = require('../lib/init');
+var deploy = require('../lib/deploy');
+var auth = require('../lib/auth');
 
 commander.version('0.0.5')
 
@@ -23,6 +25,21 @@ commander.command('init')
   .description('create a player app in the current working directory')
   .action(init);
 
+commander.command('deploy')
+  .description('deploy a player app to your organization')
+  .option('-a, --app [app]', 'the remote path of the app to deploy')
+  .option('-h, --host [host]', 'the api host (https://api.goexp.io)')
+  .action(function (env) {
+    var options = {};
+    options.host = env.host || 'https://api.goexp.io';
+    options.app = env.app;
+    deploy(options);
+  });
+
+commander.command('logout')
+  .description('remove any temporary credentials')
+  .action(auth.logout);
+
 commander.command('*', '',  { isDefault: true, noHelp: true })
   .action(function () {
     commander.help();
@@ -30,6 +47,6 @@ commander.command('*', '',  { isDefault: true, noHelp: true })
 
 commander.parse(process.argv);
 
-if (!process.argv.slice(2).length) {  
+if (!process.argv.slice(2).length) {
   commander.help();
 }

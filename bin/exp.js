@@ -6,7 +6,7 @@ var init = require('../lib/init');
 var deploy = require('../lib/deploy');
 var auth = require('../lib/auth');
 
-commander.version('0.0.7');
+commander.version('0.0.8');
 
 commander.command('play')
   .description('launch a player app in your local browser on a player')

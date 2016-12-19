@@ -27,7 +27,7 @@ commander.command('init')
 commander.command('deploy')
   .description('deploy a player app to your organization')
   .option('-a, --app [app]', 'the remote path of the app to deploy')
-  .option('-h, --host [host]', 'the api host (https://api.goexp.io)')
+  .option('-H, --host [host]', 'the api host (https://api.goexp.io)')
   .action(function (env) {
     var options = {};
     options.host = env.host || 'https://api.goexp.io';

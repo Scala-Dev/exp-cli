@@ -12,6 +12,14 @@ npm install -g exp-cli
 
 Note: You may need to use `sudo` or be logged in as `root`.
 
+## Running CLI manually
+
+An alternative to using NPM to install and start the CLI is cloning the git repository and running the script directly.
+
+```bash
+git clone https://github.com/ScalaInc/exp-cli.git
+node ./exp-cli/bin/exp.js
+```
 
 # Create the App
 

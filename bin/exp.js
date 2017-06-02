@@ -6,17 +6,17 @@ var init = require('../lib/init');
 var deploy = require('../lib/deploy');
 var auth = require('../lib/auth');
 
-commander.version('0.0.8');
+commander.version('5.0.0');
 
 commander.command('play')
   .description('launch a player app in your local browser on a player')
   .option('-p, --port [port]', 'the port to run on (8899)', parseInt)
-  .option('-e, --host [host]', 'the player host (https://player.goexp.io)')
+  .option('-e, --host [host]', 'the remote host (https://eagle.goexp.io)')
   .option('-b, --browser [browser name]', 'the non-default browser name to launch')
   .action(function (env) {
     var options = {};
     options.path = './';
-    options.host = env.host || 'https://player.goexp.io';
+    options.host = env.host || 'https://eagle.goexp.io';
     options.port = env.port || 8899;
     options.browser = env.browser || '';
     devPlayer.start(options);
@@ -29,10 +29,10 @@ commander.command('init')
 commander.command('deploy')
   .description('deploy a player app to your organization')
   .option('-a, --app [app]', 'the remote path of the app to deploy')
-  .option('-H, --host [host]', 'the api host (https://api.goexp.io)')
+  .option('-H, --host [host]', 'the remote host (https://eagle.goexp.io)')
   .action(function (env) {
     var options = {};
-    options.host = env.host || 'https://api.goexp.io';
+    options.host = env.host || 'https://eagle.goexp.io';
     options.app = env.app;
     deploy(options);
   });

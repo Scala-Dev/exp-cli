@@ -1,6 +1,6 @@
 {
   "name": "exp-cli",
-  "version": "0.0.10",
+  "version": "5.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,10 @@
     "browser-sync": "^2.12.4",
     "colors": "1.1.2",
     "commander": "2.9.0",
-    "exp-sdk": "1.0.5",
+    "exp-sdk": "5.0.0",
     "express": "^4.13.4",
     "express-http-proxy": "^0.6.0",
+    "http-proxy": "^1.16.2",
     "open": "0.0.5",
     "promptly": "2.1.0",
     "request": "2.78.0",
